@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "skills": {
+    "huashu-nuwa": {
+      "source": "overwegfernandz80-hub/writer-nuwa-skill",
+      "sourceType": "github",
+      "skillPath": "SKILL.md",
+      "computedHash": "f7f1785e915784a2e1934280c643ed39ace5c25af04413e3d9a392b011140177"
+    },
+    "writer-nuwa": {
+      "source": "overwegfernandz80-hub/writer-nuwa-skill",
+      "sourceType": "github",
+      "skillPath": "SKILL.md",
+      "computedHash": "bb9386c5e68469306314fdf768a0fded7af9e7a7ca0eae58b71aaa2e204fd14d"
+    }
+  }
+}
