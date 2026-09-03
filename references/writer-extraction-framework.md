@@ -173,6 +173,36 @@ Do not skip directly from observation to rule.
 
 ---
 
+## Distillation Output Chain
+
+After collecting and validating evidence, transform it through the following sequence:
+
+```text
+Observations
+↓
+Candidate Patterns
+↓
+Writing Models
+↓
+Writing Heuristics
+↓
+Linguistic DNA
+↓
+Narrative DNA
+↓
+Imagery System
+↓
+Emotional Mechanics
+↓
+Anti-patterns
+↓
+Honest Boundaries
+```
+
+Each stage must preserve the evidence trail and add a more specific operational layer. Do not promote a candidate to a later stage unless its mechanism, scope, confidence, and failure conditions are clear.
+
+---
+
 # 5. Step 1 - Collect Observations
 
 Each research agent produces observations. Every observation should include:

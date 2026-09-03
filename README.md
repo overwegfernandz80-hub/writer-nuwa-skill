@@ -223,6 +223,20 @@ Dual Reviewer Refinement
 
 将提炼结果组装为 Writer `SKILL.md`，包含写作哲学、写作模型、启发式规则、语言与叙事 DNA、意象系统、情绪机制、反模仿边界、写作协议和诚实边界。
 
+### 文件流
+
+```text
+Phase 1 研究材料
+  ↓
+references/writer-extraction-framework.md
+  ↓
+Phase 2 提炼机制
+  ↓
+references/writer-skill-template.md
+  ↓
+Phase 3 生成最终 Writer Skill
+```
+
 ### Phase 4: Fidelity Validation
 
 通过已知段落重构、未知题材、风格消融、反漫画化、对照、模仿、识别和应用测试，检查 Skill 学到的是写作机制，而不是原作的表面词汇或固定意象。
