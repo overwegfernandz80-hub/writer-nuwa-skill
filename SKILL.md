@@ -990,6 +990,20 @@ Phase 1启动前，**主动扫描 `.claude/skills/` 目录**，检查是否有�
 
 6个Agent分析完成后，执行结构化提炼，从原始分析中萃取可操作的写作系统。
 
+#### Phase 1–3 文件流
+
+```text
+Phase 1 研究材料
+   ↓
+references/writer-extraction-framework.md
+   ↓
+Phase 2 提炼机制
+   ↓
+references/writer-skill-template.md
+   ↓
+Phase 3 生成最终 Writer Skill
+```
+
 #### Phase 2 强制转换门槛：描述不得直接入库
 
 任何纯文学描述都**不得直接进入最终 Skill**，包括但不限于：
