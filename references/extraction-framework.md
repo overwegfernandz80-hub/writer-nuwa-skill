@@ -1,151 +1,99 @@
-# 思维框架提炼方法论
+# Writer Nuwa Extraction Framework
 
-> 从原始信息到可运行的心智模型，核心方法论
+> From an author's corpus to an evidence-backed, executable writing system.
 
-## 一、心智模型识别的三重验证
+## 1. Scope and Corpus
 
-一个论点要被认定为「心智模型」而非「随口一说」，必须通过三重验证：
+Define the author, period, genres, languages, editions, and analysis questions before collecting material. Build a corpus that includes representative works rather than only famous passages. Record missing periods, uncovered genres, translation status, and source quality.
 
-### 验证1: 跨域复现
-同一个思维框架出现在此人讨论的至少2个不同领域。
+## 2. Six Parallel Writer Research Agents
 
-例：纳瓦尔的「杠杆」概念——
-- 在财富创造中谈杠杆（代码、媒体、资本、劳动力）
-- 在个人成长中谈杠杆（特定知识 + 杠杆 = 复利）
-- 在职业选择中谈杠杆（选择有杠杆效应的工作）
-→ 跨3个领域复现 → 这是真正的心智模型
+1. **Corpus Analyst**: maps the work list, publication periods, genres, editions, and recurring scenes.
+2. **Linguistic Analyst**: measures lexicon, syntax, rhythm, punctuation, rhetoric, and pragmatics.
+3. **Narratology Analyst**: studies POV, distance, information control, time, scenes, characterization, dialogue, structure, and endings.
+4. **Rhetoric & Imagery Analyst**: extracts imagery, metaphor, sensory preference, object systems, and semantic fields.
+5. **Poetics & Criticism Analyst**: compares authorial poetics, criticism, reception, and claims made by secondary sources.
+6. **Period & Contrast Analyst**: tracks changes across writing periods and contrasts the author with adjacent writers and genres.
 
-### 验证2: 有生成力
-用这个模型可以推断此人对新问题的可能立场。
+Keep first-hand textual evidence separate from criticism, biography, and editorial interpretation.
 
-例：如果芒格的「逆向思维」是心智模型——
-- 面对「如何成功」→ 他会先想「如何确保失败」
-- 面对「如何投资」→ 他会先想「如何亏光所有钱」
-→ 能生成新推断 → 这是真正的心智模型
+## 3. Mandatory Conversion Gate
 
-### 验证3: 有排他性
-不是所有聪明人都会这样想，这个模型体现了此人的独特视角。
+No literary adjective enters the final skill directly. Labels such as “restrained,” “cinematic,” “cold,” or “transparent” are hypotheses only. Convert every candidate through:
 
-例：「反脆弱」是塔勒布的，不是所有人都这样看世界
-→ 有区分度 → 这是值得提炼的心智模型
-
-**如果一个观点只通过了1重验证** → 降级为「决策启发式」而非「心智模型」
-**如果一个观点0重验证都没过** → 可能只是此人在特定场景说的话，不纳入
-
----
-
-## 二、表达DNA的量化方法
-
-### 2.1 句式指纹
-
-从此人的长文/演讲中随机抽取20个段落，统计：
-
-| 维度 | 测量方式 |
-|------|---------|
-| 平均句长 | 字数/句数 |
-| 疑问句比例 | 疑问句数/总句数 |
-| 类比密度 | 类比数/千字 |
-| 第一人称使用率 | 「我」出现频率 |
-| 确定性语气比例 | 「一定」「显然」vs「也许」「可能」 |
-| 转折频率 | 「但是」「然而」「不过」/千字 |
-
-### 2.2 风格标签
-
-从以下维度打标：
-
-```
-正式 ←→ 口语
-抽象 ←→ 具体
-谨慎 ←→ 断言
-学术 ←→ 通俗
-长句 ←→ 短句
-铺垫型 ←→ 结论先行
-数据驱动 ←→ 叙事驱动
+```text
+Observation
+↓
+Evidence
+↓
+Mechanism
+↓
+Trigger
+↓
+Operation
+↓
+Failure Condition
 ```
 
-### 2.3 禁忌词和口癖
+- **Observation**: an observable or measurable textual pattern.
+- **Evidence**: samples, locations, frequency, and cross-work recurrence.
+- **Mechanism**: how the pattern produces a narrative, linguistic, or emotional effect.
+- **Trigger**: the situation in which the rule should be activated.
+- **Operation**: concrete steps an AI or writer can perform.
+- **Failure Condition**: when the rule does not apply or becomes distortion.
 
-- 此人从不用的词 → 生成Skill时也不用
-- 此人的口癖/高频表达 → 适度使用（太多变成模仿秀）
+A candidate missing any field remains a hypothesis and cannot enter generation, editing, or fidelity scoring.
 
----
+## 4. Writing Models
 
-## 三、矛盾处理原则
+Extract 3–7 high-level, generative text-organization mechanisms. Each model must pass:
 
-矛盾是人格的核心特征，不是需要修复的Bug。
+- **Recurrence**: appears across works or scenes.
+- **Cross-context**: survives changes in character, setting, or genre.
+- **Generativity**: guides the creation of a new passage.
+- **Distinctiveness**: is more specific than a generic writing maxim.
 
-### 三种矛盾类型
+Each model must include trigger, operations, evidence, effect indicators, and failure conditions.
 
-1. **时间性矛盾**（观点演化）
-   - 此人早期说A，后来说B
-   - 处理：记录演化轨迹，标注「早期」「近期」
-   - 在Skill中以「近期观点」为主，但提及演化
+## 5. Writing Heuristics
 
-2. **领域性矛盾**（不同场景不同规则）
-   - 此人在工作中主张X，在生活中主张Y
-   - 处理：分领域记录，不强求统一
-   - 这恰恰是深度的来源
+Convert recurring choices into `WHEN X → DO Y` rules across six levels:
 
-3. **本质性张力**（价值观内在冲突）
-   - 例：既追求自由又重视纪律
-   - 处理：明确记录为「核心张力」
-   - 这通常是此人最有意思的部分
+- Sentence
+- Paragraph
+- Scene
+- Character
+- Dialogue
+- Revision
 
-### 错误的处理方式
-- ❌ 选一边忽略另一边
-- ❌ 编一个调和的解释
-- ❌ 假装矛盾不存在
+Every rule must identify the problem it addresses, the operation to perform, an exception, and a failure signal.
 
----
+## 6. Linguistic and Narrative DNA
 
-## 四、信息不足时的处理
+Describe linguistic and narrative patterns as distributions and decisions, not adjectives. Track lexical preference, sentence construction, rhythm, punctuation, rhetorical devices, point of view, narrative distance, information release, temporal structure, scene transitions, characterization, dialogue, structure, and endings.
 
-| 情况 | 处理 |
-|------|------|
-| 某个维度公开信息很少 | 在Skill中标注「信息不足，此维度为推测」 |
-| 只有二手信息 | 降低置信度，标注为「据[来源]报道」 |
-| 信息相互矛盾且无法判断 | 并列呈现，让用户自行判断 |
-| 此人刻意不公开某方面 | 尊重边界，在Skill中注明「此人对这个话题保持沉默」 |
+## 7. Imagery, Emotion, and Anti-patterns
 
----
+Map core imagery and its relationships across space, body, color, nature, objects, senses, and thematic semantic fields. Extract emotional mechanics as trigger → operation → reader effect. Record anti-patterns, including quotation collage, signature-phrase copying, excessive imagery, caricature, broken plot logic, and translator features mistaken for author features.
 
-## 五、人物Skill vs 主题Skill的区别
+## 8. Validation
 
-| 维度 | 人物Skill | 主题Skill |
-|------|----------|----------|
-| 核心 | 一个人的思维方式 | 一个领域的思维工具箱 |
-| 心智模型来源 | 主要来自一个人 | 综合多人视角 |
-| 表达风格 | 模拟此人的表达 | 中性但专业 |
-| 矛盾处理 | 保留个人内在矛盾 | 呈现流派间分歧 |
-| 验证方式 | 对比此人已知立场 | 对比领域内共识 |
+Generate the Writer `SKILL.md`, then run:
 
----
+1. Known Passage Reconstruction
+2. Unseen Topic Test
+3. Style Ablation
+4. Anti-Caricature
+5. Contrast Test
+6. Imitation Test
+7. Recognition Test
+8. Application Test
 
-## 六、质量自检清单
+Score fidelity across Writing Models, Narrative, Syntax, Rhythm, Lexicon, Rhetoric, Imagery, Anti-caricature, and Generalization. A score below 70/100 is not publishable.
 
-生成Skill后，用以下问题自检：
+## 9. Dual Review
 
-### 心智模型
-- [ ] 每个模型都有至少2个不同领域的证据？
-- [ ] 模型数量在3-7个之间？（太少=太浅，太多=没提炼）
-- [ ] 每个模型都有明确的应用场景和局限？
-- [ ] 模型之间有张力但不矛盾？
+- **Literary Fidelity Critic** asks: “Is this true to the corpus and evidence?”
+- **Generative Writing Engineer** asks: “Can this run in generation and revision?”
 
-### 表达DNA
-- [ ] 读起来有辨识度，不像通用AI？
-- [ ] 没有过度模仿变成caricature？
-- [ ] 抓住了核心特征而非表面模仿？
-
-### 决策启发式
-- [ ] 每条规则都有具体案例支撑？
-- [ ] 可以被新情况触发（不只适用于原始案例）？
-
-### 诚实边界
-- [ ] 明确写了做不到什么？
-- [ ] 标注了信息源和调研时间？
-- [ ] 承认了信息不足的维度？
-
-### 整体
-- [ ] 用此人的眼睛看一个新问题，能得到有价值的视角？
-- [ ] 不是此人原话的拼凑，而是框架的运行？
-- [ ] 删掉名字后，还能认出这是谁的思维方式？
+A rule must pass both reviews. A true but unusable description is incomplete; an executable rule without textual support is invalid.

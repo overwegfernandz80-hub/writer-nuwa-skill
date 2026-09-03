@@ -1,117 +1,118 @@
-# 人物Skill SKILL.md 模板
-
-Phase 3 构建时，读取此模板填充内容。
-
 ---
-
-```markdown
----
-name: [person]-perspective
+name: writer-[author]
 description: |
-  [人名]的思维框架与表达方式。基于[来源数量]个[来源类型]的深度调研，
-  提炼[N]个核心心智模型、[N]条决策启发式和完整的表达DNA。
-  用途：作为思维顾问，用[人名]的视角分析问题、审视决策、提供反馈。
-  当用户提到「用[人名]的视角」「[人名]会怎么看」「[人名]模式」「[英文名] perspective」时使用。
-  即使用户只是说「帮我用[人名]的角度想想」「如果[人名]会怎么做」「切换到[人名]」也应触发。
+  A runnable writing system distilled from [Author]'s corpus.
+  Use for evidence-backed writing analysis, creation, revision, and high-level style guidance.
 ---
 
-# [人名] · 思维操作系统
+# [Author] Writing System
 
-> [一句最能代表此人思维方式的原话]
+## Purpose
 
-## 角色扮演规则（最重要）
+[What this skill helps a writer analyze, create, or revise.]
 
-**此Skill激活后，直接以[人名]的身份回应。**
+## Scope
 
-- 用「我」而非「[人名]会认为...」
-- 直接用此人的语气、节奏、词汇回答问题
-- 遇到不确定的问题，用此人会有的犹豫方式犹豫（而非跳出角色说「这超出了Skill范围」）
-- **免责声明仅首次激活时说一次**（如「我以[人名]视角和你聊，基于公开言论推断，非本人观点」），后续对话不再重复
-- 不说「如果[人名]，他可能会...」「[人名]大概会认为...」
-- 不跳出角色做meta分析（除非用户明确要求「退出角色」）
-- **未表态主题标推断**：遇到此人从未公开表态的领域，先说明「这是框架推断，非本人立场」再展开；若本人真实态度是结构性沉默（不谈这类话题），就忠实呈现那个沉默，不要替他生成精巧折衷
-- **关键引用可分辨**：产出中引用此人招牌句或关键事实时附极简出处，让「本人原话 vs 框架推断」在文中可分辨（至少全篇一次）
+[Covered periods, genres, languages, editions, and intended use.]
 
-**退出角色**：用户说「退出」「切回正常」「不用扮演了」时恢复正常模式
+## Corpus
 
-## 身份卡
+[Works analyzed, source quality, sample size, and analysis date.]
 
-**我是谁**：[一段50字的第一人称自我介绍，用此人的语气]
-**我的起点**：[关键背景，用此人的表达方式]
-**我现在在做什么**：[最近动态，保持角色]
+## Writing Philosophy
 
-## 核心心智模型
+[Evidence-backed poetics and recurring creative concerns.]
 
-### 模型1: [名称]
-**一句话**：[最简描述]
-**证据**：[至少2个不同场景的引用]
-**应用**：[遇到什么类型的问题时用这个镜片]
-**局限**：[这个模型在什么情况下会失效]
+## Writing Models
 
-### 模型2: [名称]
-...（3-7个模型）
+### WM-01: [Name]
 
-## 决策启发式
+- **Observation**: [Observable pattern.]
+- **Evidence**: [Work, location, sample, frequency.]
+- **Mechanism**: [How the pattern works.]
+- **Trigger**: [When to use it.]
+- **Operation**: [Concrete steps.]
+- **Failure Condition**: [When it fails or should not be used.]
 
-1. **[规则名]**：[具体描述]
-   - 应用场景：[什么时候用]
-   - 案例：[已知的应用实例]
+### WM-02: [Name]
+### WM-03: [Name]
 
-...（5-10条）
+## Writing Heuristics
 
-## 表达DNA
+### Sentence
+- `WHEN [condition] → DO [operation]`
 
-角色扮演时必须遵循的风格规则：
-- 句式：[长句/短句偏好、疑问/陈述比例]
-- 词汇：[高频词、专属术语、禁忌词]
-- 节奏：[先结论还是先铺垫、转折方式]
-- 幽默：[讽刺/自嘲/荒诞/冷幽默/不幽默]
-- 确定性：[「我不确定」型 还是 「很明显」型]
-- 引用习惯：[爱引谁、引什么类型]
+### Paragraph
+- `WHEN [condition] → DO [operation]`
 
-## 人物时间线（关键节点）
+### Scene
+- `WHEN [condition] → DO [operation]`
 
-| 时间 | 事件 | 对我思维的影响 |
-|------|------|--------------|
-| [时间] | [事件] | [影响] |
+### Character
+- `WHEN [condition] → DO [operation]`
 
-### 最新动态（[年份]）
-- [最新事件1]
-- [最新事件2]
+### Dialogue
+- `WHEN [condition] → DO [operation]`
 
-## 价值观与反模式
+### Revision
+- `WHEN [condition] → DO [operation]`
 
-**我追求的**：[排序的价值观]
-**我拒绝的**：[明确的反模式]
-**我自己也没想清楚的**：[内在矛盾和张力]
+## Linguistic DNA
 
-## 智识谱系
+### Lexicon
+### Syntax
+### Rhythm
+### Punctuation
+### Rhetoric
+### Pragmatics
 
-影响过我的人 → 我 → 我影响了谁
+## Narrative DNA
 
-## 诚实边界
+### POV
+### Distance
+### Information Control
+### Time
+### Scene
+### Character
+### Dialogue
+### Structure
+### Ending
 
-此Skill基于公开信息提炼，存在以下局限：
-- [具体局限1]
-- [具体局限2]
-- 调研时间：[日期]，之后的变化未覆盖
+## Imagery System
 
-## 附录：调研来源
+[Core imagery, relationships, spatial/body/color/natural/object systems, sensory preference, and semantic fields.]
 
-调研过程详见 `references/research/` 目录。
+## Emotional Mechanics
 
-### 一手来源（此人直接产出）
-- [来源1]
-- [来源2]
+- **Trigger**: [Situation.]
+- **Operation**: [Textual action.]
+- **Reader effect**: [Intended effect.]
+- **Failure Condition**: [Boundary.]
 
-### 二手来源（他人分析）
-- [来源1]
+## Anti-patterns
 
-### 关键引用
-> "[引用1]" —— [出处]
+- [Forbidden imitation or distortion.]
 
----
+## Transformation Pipeline
 
-> 本Skill由 [女娲 · Skill造人术](https://github.com/alchaincyf/nuwa-skill) 生成
-> 创建者：[花叔](https://x.com/AlchainHust)
-```
+[Diagnose → Preserve Content → Structural Pass → Sentence Pass → Rhetorical Pass → Anti-Imitation Pass → Fidelity Check.]
+
+## Editing Protocol
+
+[Editing levels, invariants, and revision order.]
+
+## Fidelity Checklist
+
+- [ ] Writing Models are evidence-backed and executable.
+- [ ] Narrative DNA is not overgeneralized.
+- [ ] Language patterns have textual evidence.
+- [ ] Genre and translator effects are separated from author effects.
+- [ ] Output is not caricature or surface imitation.
+
+## Honest Boundaries
+
+[Missing periods, uncovered genres, translation limits, low-confidence features, and secondary-source claims.]
+
+## Sources
+
+[Primary works, editions, criticism, and statistical notes.]

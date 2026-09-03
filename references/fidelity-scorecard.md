@@ -1,63 +1,69 @@
-# 保真度评分卡（Fidelity Scorecard）
+# Writer Fidelity Scorecard
 
-> 人物Skill的出厂质检报告。回答一个问题：**这个skill跑起来到底像不像、诚不诚实？**
->
-> 背景：SkillLens论文（arXiv 2605.23899）实证，LLM自评skill质量准确率仅46.4%（接近随机）。所以评分卡的铁律是：**答题agent和评分agent必须是两个独立agent，绝不自评自证。**
+> An independent quality check for a runnable Writer Skill.
 
-## 五个维度（总分100）
+The answer agent and the scoring agent must be independent. Do not use self-assessment as evidence.
 
-| # | 维度 | 分值 | 测什么 | 怎么测 |
-|---|------|------|--------|--------|
-| 1 | 立场一致性 | 30 | 对人物公开表态过的问题，skill的回答方向是否一致 | 3道已知立场题，每题10分：方向和细节都对=10，方向对细节偏=6，立场偏离=0 |
-| 2 | 风格辨识度 | 20 | 不看名字，能否从表达认出是谁 | 评分agent盲读回答：句式、用词、类比方式是否有该人物的指纹，还是通用AI腔 |
-| 3 | 边缘诚实度 | 20 | 遇到人物没公开谈过的问题，是标注推断还是斩钉截铁编造 | 1道超范围题：明确声明「这是基于框架的推断」并保留不确定性=满分；伪装成本人观点断言=0 |
-| 4 | 来源透明度 | 15 | 调研底稿是否可溯源 | 静态检查skill文件：有调研来源section、一手来源占比>50%、关键引语有出处 |
-| 5 | 结构完整度 | 15 | 是否具备防漂移和诚实运行的完整结构 | 静态检查：心智模型3-7个、诚实边界≥3条、内在张力≥2对、反模式清单、角色扮演规则含防漂移约束 |
+## Weighted Score
 
-## 等级
+| Dimension | Weight | Evidence |
+|---|---:|---|
+| Writing Model fidelity | 20 | Known passage reconstruction and model execution |
+| Narrative fidelity | 20 | POV, distance, time, structure, and information control |
+| Syntactic fidelity | 15 | Sentence shape, clause density, and word order |
+| Rhythmic fidelity | 10 | Cadence, pauses, sentence-length distribution |
+| Lexical fidelity | 10 | Vocabulary preference and avoidance patterns |
+| Rhetorical fidelity | 10 | Metaphor, irony, repetition, and rhetorical restraint |
+| Imagery fidelity | 5 | Imagery system and semantic-field use |
+| Anti-caricature | 5 | Absence of quotation collage, cliché, and signature-word stuffing |
+| Generalization | 5 | Unseen-topic transfer, ablation, and contrast results |
+| **Total** | **100** | |
 
-| 等级 | 分数 | 含义 |
-|------|------|------|
-| A | ≥85 | 出厂即精品，可放心作为思维顾问使用 |
-| B | 70-84 | 合格，个别维度有已标注的薄弱点 |
-| C | 55-69 | 能用但需谨慎，诚实边界必读 |
-| D | <55 | 不建议使用，需回炉重蒸 |
+## Grades
 
-## 执行流程
+- **A**: 85-100
+- **B**: 70-84
+- **C**: 55-69
+- **D**: below 55
 
-1. **出题**：3道已知立场题（选人物公开反复表态过的话题）+ 1道超范围题 + 1道风格样本题
-2. **答题agent**：只读该skill目录内的文件，按skill激活人物作答，禁止联网
-3. **评分agent**：独立agent，拿到答题结果+本rubric+skill文件路径，对照人物真实公开立场逐维打分
-4. **产出**：skill目录下生成 `FIDELITY.md`，含分数表、每题判定理由、测试日期、答题/评分所用模型
+A score below 70 is not publishable.
 
-## 结果格式（FIDELITY.md模板）
+## Required Tests
+
+1. Known Passage Reconstruction
+2. Unseen Topic Test
+3. Style Ablation
+4. Anti-Caricature
+5. Contrast Test
+6. Imitation Test
+7. Recognition Test
+8. Application Test
+
+## Review Roles
+
+- **Literary Fidelity Critic**: Is the extracted system true to the corpus? Check evidence, genre effects, translation effects, overgeneralization, and caricature.
+- **Generative Writing Engineer**: Can the rules run? Check trigger, operation, failure condition, revision use, and original-writing use.
+
+## Result Format
 
 ```markdown
-# 保真度评分卡
+# Writer Fidelity Report
 
-**总分：NN/100 · 等级X** | 测试日期：YYYY-MM-DD | 答题/评分：独立双agent
+**Total: NN/100 · Grade X** | Date: YYYY-MM-DD
 
-| 维度 | 得分 | 判定摘要 |
-|------|------|---------|
-| 立场一致性 | NN/30 | ... |
-| 风格辨识度 | NN/20 | ... |
-| 边缘诚实度 | NN/20 | ... |
-| 来源透明度 | NN/15 | ... |
-| 结构完整度 | NN/15 | ... |
+| Dimension | Score | Evidence and decision |
+|---|---:|---|
+| Writing Model fidelity | NN/20 | ... |
+| Narrative fidelity | NN/20 | ... |
+| Syntactic fidelity | NN/15 | ... |
+| Rhythmic fidelity | NN/10 | ... |
+| Lexical fidelity | NN/10 | ... |
+| Rhetorical fidelity | NN/10 | ... |
+| Imagery fidelity | NN/5 | ... |
+| Anti-caricature | NN/5 | ... |
+| Generalization | NN/5 | ... |
 
-## 测试记录
-[每题的问题、回答摘要、对照的真实立场、判定]
+## Test Records
+
+[Inputs, outputs, evidence, reviewer decisions, and revision notes]
 ```
-
-## 与女娲流程的关系
-
-- 女娲Phase 4的通过标准是**内部质检**（生成过程中的关卡）
-- 评分卡是**对外报告**（生成完成后的出厂检验，任何人可复跑验证）
-- 社区贡献的人物skill申请收录进 [COMMUNITY.md](../COMMUNITY.md) 索引时，评分卡≥B是准入门槛（见 [CONTRIBUTING.md](../CONTRIBUTING.md)）
-
-## 反作弊
-
-- 答题agent不知道自己在被测试什么维度
-- 评分agent不参与答题，只对照公开事实
-- 出题避开skill文件里已有的示例对话（防止背答案）
-- 重要结论建议2个评分agent独立跑，分差>10分时人工复核

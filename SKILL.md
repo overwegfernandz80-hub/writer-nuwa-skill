@@ -2343,7 +2343,7 @@ Imagery & Semantic System = 作者的"意象库"与"意义网络"。通过意象
 将Phase 2提炼结果组装为可运行的SKILL.md。
 
 #### Step 1: 读取模板
-读取 `references/skill-template.md` 获取标准结构。模板定义了Writer Skill的完整骨架：frontmatter、使用说明、写作特征库、叙述风格指南、语言修辞手册、创作建议、文学谱系、诚实边界、参考文献。
+读取 `references/writer-skill-template.md` 获取标准结构。模板定义了Writer Skill的完整骨架：frontmatter、使用说明、写作模型、启发式规则、语言与叙事DNA、意象系统、写作协议、诚实边界和来源。
 
 #### Step 2: 填充内容
 按模板结构，将Phase 2的提炼结果逐section填入：
