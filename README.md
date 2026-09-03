@@ -58,7 +58,7 @@ Writer Nuwa 基于 NUWA-Skill 的人物蒸馏方法，
 
 <br>
 
-[![Star History Chart](https://api.star-history.com/svg?repos=alchaincyf/nuwa-skill&type=Date)](https://star-history.com/#alchaincyf/nuwa-skill&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=overwegfernandz80-hub/writer-nuwa-skill&type=Date)](https://star-history.com/#overwegfernandz80-hub/writer-nuwa-skill&Date)
 
 </div>
 
@@ -142,13 +142,13 @@ Naval     ❯ 你列了三个欲望。每个欲望都是你跟不快乐签的一
 打开你正在用的 agent（Claude Code、Codex、Cursor、OpenClaw、Hermes、CodeBuddy、Workbuddy、Gemini CLI、OpenCode 等），告诉它：
 
 ```
-帮我安装这个 skill：https://github.com/alchaincyf/nuwa-skill
+帮我安装这个 skill：https://github.com/overwegfernandz80-hub/writer-nuwa-skill
 ```
 
 或者用通用 CLI 安装器（[vercel-labs/skills](https://github.com/vercel-labs/skills)，支持 55+ runtime）：
 
 ```bash
-npx skills add alchaincyf/nuwa-skill
+npx skills add overwegfernandz80-hub/writer-nuwa-skill
 ```
 
 它会自动识别你当前的 runtime 并把 skill 放到正确目录。需要指定时加 `-a claude-code` / `-a codex` / `-a cursor` / `-a openclaw` 等参数。
@@ -168,7 +168,7 @@ npx skills add alchaincyf/nuwa-skill
 | 其他 runtime | clone 到对应 runtime 的 `skills/` 目录 |
 
 ```bash
-git clone https://github.com/alchaincyf/nuwa-skill <上面对应的路径>
+git clone https://github.com/overwegfernandz80-hub/writer-nuwa-skill <上面对应的路径>
 ```
 
 </details>
