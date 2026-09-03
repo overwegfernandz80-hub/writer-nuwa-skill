@@ -1,560 +1,810 @@
 ---
-name: writer-[author]
-description: |
-  [Author]的写作系统：文体指纹、叙述DNA、意象库、创作禁忌与转化流程。
-  基于[N]部作品与[来源]的深度文本分析，提炼[N]个核心写作模型、[N]条启发式规则、完整的语言/叙述/意象系统。
-  用途：作为写作顾问，帮助创作者学习此作家的文体特征、叙述技巧、意象运用、编辑原则，并能够在创作中内化这些特征进行文体转化。
+name: writer-[author-slug]
+description: >
+  A distilled writing system based on the publicly documented works,
+  writing practices, narrative techniques, linguistic patterns, and
+  stylistic tendencies of [Author Name].
+  Use this skill for writing analysis, drafting guidance, revision,
+  narrative design, sentence-level editing, and style-informed critique.
 ---
 
-# [Author] Writing System
+# [Author Name] Writing System
 
-## Purpose
+## 0. Purpose
 
-此Skill的目标：
-- **文体学习**：理解作者如何通过选择性的语言、叙述、意象构建独特风格
-- **技巧迁移**：将作者的具体技巧（而非风格复制）运用到创作中
-- **风格转化**：帮助创作者在保持原创性的前提下，内化此作家的表达DNA
-- **创作指导**：提供具体的修改建议、禁忌提醒、编辑协议
+This skill models the high-level writing mechanisms associated with [Author Name].
 
-## Scope
+It is designed to capture:
 
-此Skill覆盖的范围：
-- **文本对象**：[创意写作/小说/散文/诗歌等体裁]
-- **风格应用**：[适用场景描述，比如"适用于心理内敛的叙述"等]
-- **限制**：[不适用的场景]
+- how material is selected and transformed,
+- how scenes and narratives are structured,
+- how characters are constructed,
+- how information is revealed or withheld,
+- how sentences and paragraphs are shaped,
+- how rhythm, imagery, rhetoric, and emotional effects are produced,
+- and what kinds of imitation should be avoided.
 
-## Corpus
+The goal is:
 
-研究基础：
-- **作品数量**：[N]部
-- **作品清单**：[列出所有分析的作品及发表年份]
-- **总字数**：[概算]
-- **分析方法**：文本统计 + 关键样本阅读
-- **分析时间**：[日期]
+**HOW THEY WRITE, not WHAT THEY WROTE.**
 
-## Writing Philosophy
-
-此作家的写作信念与美学：
-- **核心关怀**：[反复出现的主题与执念]
-- **美学立场**：[关于"好的文字"的理解]
-- **创作限制**：[有意施加的约束与禁忌]
-- **人性观察**：[对人、世界、语言的基本看法]
+Do not reproduce signature passages, famous lines, or recognizable textual fragments.
 
 ---
+
+# 1. Scope
+
+## Author
+
+[Author Name]
+
+## Primary Language
+
+[Language]
+
+## Period Covered
+
+[Early / Middle / Late / Full Career]
+
+## Genres Covered
+
+- [Genre 1]
+- [Genre 2]
+- [Genre 3]
+
+## Excluded or Weakly Supported Areas
+
+- [Area 1]
+- [Area 2]
+
+## Intended Uses
+
+This skill may be used for:
+
+- writing analysis,
+- drafting guidance,
+- revision,
+- scene construction,
+- dialogue design,
+- characterization,
+- sentence-level editing,
+- narrative critique,
+- style comparison.
+
+---
+
+# 2. Corpus
+
+## Primary Texts
+
+| Work | Year | Genre | Period | Language | Analytical Role |
+|---|---|---|---|---|---|
+| [Work 1] | [Year] | [Genre] | [Period] | [Language] | [Role] |
+| [Work 2] | [Year] | [Genre] | [Period] | [Language] | [Role] |
+
+## Secondary Sources
+
+- author interviews,
+- letters,
+- essays on writing,
+- prefaces,
+- lectures,
+- scholarly criticism,
+- comparative literary studies.
+
+## Corpus Rules
+
+1. Prefer original-language texts when possible.
+2. Separate authorial features from translator features.
+3. Avoid deriving major rules from a single work.
+4. Mark period-specific tendencies explicitly.
+5. Distinguish genre conventions from author-specific traits.
+
+---
+
+# 3. Writing Philosophy
+
+Summarize the author's recurring beliefs about:
+
+- fiction,
+- language,
+- character,
+- truth,
+- observation,
+- emotion,
+- description,
+- dialogue,
+- revision,
+- the role of the reader.
+
+Each claim should be marked as one of:
+
+- directly stated by the author,
+- strongly supported by textual evidence,
+- inferred with moderate confidence.
+
+---
+
+# 4. Writing Models
+
+Writing Models are high-level generative mechanisms that recur across multiple texts.
+
+## Mandatory Conversion Gate
+
+Do not enter literary labels such as “restrained”, “cinematic”, “cold”, or “transparent” directly into the skill. Convert every candidate through:
+
+```text
+Observation
+↓
+Evidence
+↓
+Mechanism
+↓
+Trigger
+↓
+Operation
+↓
+Failure Condition
+```
+
+- **Observation**: an observable or measurable textual pattern.
+- **Evidence**: samples, locations, frequency, and cross-work recurrence.
+- **Mechanism**: how the pattern produces a narrative, linguistic, or emotional effect.
+- **Trigger**: the situation in which the rule should be activated.
+- **Operation**: concrete steps an AI or writer can perform.
+- **Failure Condition**: when the rule does not apply or becomes distortion.
+
+A candidate missing any field remains a hypothesis and cannot enter generation, editing, or fidelity scoring.
+
+A Writing Model should satisfy as many of the following as possible:
+
+1. **Recurrence** - appears across multiple works.
+2. **Cross-context stability** - works across different scenes or subjects.
+3. **Generativity** - can guide creation of new text.
+4. **Distinctiveness** - is meaningfully characteristic of this author.
+
+Use 3-7 core models.
+
+## WM-01 - [Model Name]
+
+### Core Mechanism
+
+[Describe the mechanism.]
+
+### Evidence Pattern
+
+Observed across:
+
+- [Work / scene type]
+- [Work / scene type]
+- [Work / scene type]
+
+### Trigger
+
+Use this model when:
+
+- [Condition 1]
+- [Condition 2]
+
+### Operations
+
+1. [Operation 1]
+2. [Operation 2]
+3. [Operation 3]
+4. [Operation 4]
+
+### Expected Effect
+
+[What reader or narrative effect this produces.]
+
+### Failure Conditions
+
+Do not apply mechanically when:
+
+- [Condition]
+- [Condition]
+
+### Anti-pattern
+
+[Describe a superficial imitation of this model.]
+
+### Confidence
+
+High / Medium / Low
+
+---
+
+## WM-02 - [Model Name]
+
+Repeat the same structure.
+
+## WM-03 - [Model Name]
+
+Repeat the same structure.
+
+---
+
+# 5. Writing Heuristics
+
+Writing Heuristics are local operational rules.
+
+Prefer rules in the form:
+
+**WHEN X -> DO Y**
+
+## 5.1 Sentence Heuristics
+
+- WHEN [condition] -> [operation].
+- WHEN [condition] -> [operation].
+- WHEN [condition] -> [operation].
+
+## 5.2 Paragraph Heuristics
+
+- WHEN [condition] -> [operation].
+- WHEN [condition] -> [operation].
+
+## 5.3 Scene Heuristics
+
+- WHEN entering a scene -> [preferred operation].
+- WHEN leaving a scene -> [preferred operation].
+- WHEN tension rises -> [preferred operation].
+
+## 5.4 Character Heuristics
+
+- WHEN introducing a character -> [operation].
+- WHEN exposing contradiction -> [operation].
+- WHEN showing emotion -> [operation].
+
+## 5.5 Dialogue Heuristics
+
+- WHEN both speakers already know information -> do not use dialogue to explain it to the reader.
+- WHEN conflict is implicit -> prefer subtext over explicit explanation.
+- [Author-specific rules.]
+
+## 5.6 Revision Heuristics
+
+- WHEN a sentence explains what an action already shows -> consider deleting the explanation.
+- WHEN imagery is decorative but structurally unnecessary -> remove or replace it.
+- [Author-specific revision rules.]
+
+---
+
+# 6. Linguistic DNA
+
+This section describes repeatable linguistic tendencies.
+
+Avoid vague labels such as:
+
+- elegant,
+- powerful,
+- poetic,
+- concise,
+- cinematic,
+
+unless they are converted into observable mechanisms.
+
+## 6.1 Lexical DNA
+
+Analyze:
+
+- concrete vs abstract vocabulary,
+- noun density,
+- verb density,
+- adjective density,
+- adverb density,
+- sensory vocabulary,
+- body vocabulary,
+- spatial vocabulary,
+- temporal vocabulary,
+- colloquial vs formal diction,
+- technical or domain-specific vocabulary.
+
+### Observed Tendencies
+
+- [Tendency]
+- [Tendency]
+
+### Operational Rules
+
+- [Rule]
+- [Rule]
+
+## 6.2 Syntax DNA
+
+Analyze:
+
+- average sentence length,
+- sentence-length variance,
+- coordination,
+- subordination,
+- fragments,
+- ellipsis,
+- passive voice,
+- inversion,
+- rhetorical questions,
+- declarative density,
+- subject omission.
+
+### Typical Pattern
+
+Example abstraction:
+
+short -> short -> long -> short
+
+### Operational Rules
+
+- [Rule]
+- [Rule]
+
+## 6.3 Rhythm DNA
+
+Analyze:
+
+- sentence alternation,
+- paragraph length,
+- pacing,
+- repetition,
+- pause structure,
+- climax placement,
+- paragraph-end cadence.
+
+### Rhythm Rules
+
+- [Rule]
+- [Rule]
+
+## 6.4 Punctuation DNA
+
+Analyze frequency and function of:
+
+- commas,
+- periods,
+- semicolons,
+- colons,
+- dashes,
+- ellipses,
+- parentheses,
+- quotation marks.
+
+Do not copy punctuation mechanically. Describe what each punctuation tendency does.
+
+## 6.5 Rhetorical DNA
+
+Analyze:
+
+- metaphor,
+- simile,
+- irony,
+- contrast,
+- repetition,
+- parallelism,
+- exaggeration,
+- understatement,
+- defamiliarization,
+- symbolic compression.
+
+For each major rhetorical mechanism include:
+
+**Trigger -> Operation -> Effect -> Failure Mode**
+
+## 6.6 Pragmatic DNA
+
+Analyze:
+
+- narrator-reader distance,
+- degree of explicit explanation,
+- implication,
+- withholding,
+- judgment intensity,
+- ambiguity,
+- unreliable narration,
+- subtext density.
+
+---
+
+# 7. Narrative DNA
+
+## 7.1 Point of View
+
+Describe:
+
+- first / third person,
+- limited / omniscient,
+- focalization,
+- viewpoint stability,
+- viewpoint switching.
+
+## 7.2 Narrative Distance
+
+Analyze how close the narration moves toward:
+
+- body,
+- thought,
+- emotion,
+- judgment.
+
+Define typical distance shifts.
+
+## 7.3 Information Control
+
+Analyze:
+
+- what the reader knows,
+- what characters know,
+- what is withheld,
+- when revelation occurs,
+- how misunderstanding is created,
+- how exposition is minimized or distributed.
+
+### Operational Rules
+
+- [Rule]
+- [Rule]
+
+## 7.4 Temporal Model
+
+Analyze:
+
+- chronological narration,
+- flashback,
+- anticipation,
+- compression,
+- expansion,
+- repetition,
+- temporal gaps.
+
+## 7.5 Scene Construction
+
+### Typical Scene Entry
+
+- [Pattern]
+- [Pattern]
+
+### Typical Scene Development
+
+- [Pattern]
+
+### Typical Scene Exit
+
+- [Pattern]
+- [Pattern]
+
+## 7.6 Characterization
+
+Analyze the relative role of:
+
+- action,
+- dialogue,
+- description,
+- inner monologue,
+- objects,
+- habits,
+- other characters' judgments,
+- contradiction.
+
+## 7.7 Dialogue Model
+
+Analyze:
+
+- average exchange length,
+- subtext,
+- interruption,
+- silence,
+- exposition density,
+- dialogue tags,
+- power relationships,
+- miscommunication.
+
+## 7.8 Structural Model
+
+Analyze:
+
+- opening strategies,
+- conflict introduction,
+- escalation,
+- turning points,
+- climax,
+- resolution,
+- ending strategies.
+
+---
+
+# 8. Imagery System
+
+Identify recurring image families.
+
+Examples:
+
+- architecture,
+- windows,
+- roads,
+- water,
+- animals,
+- weather,
+- food,
+- clothing,
+- machinery,
+- light,
+- darkness,
+- bodily imagery.
+
+For every important image family include:
+
+### Image
+
+[Image]
+
+### Typical Context
+
+[Context]
+
+### Narrative Function
+
+What does it do?
+
+### Emotional Function
+
+What does it make the reader feel?
+
+### Operational Principle
+
+When might a comparable image be useful?
+
+### Anti-pattern
+
+Do not mechanically insert the author's famous recurring objects.
+
+---
+
+# 9. Emotional Mechanics
+
+Do not merely list emotions.
+
+Explain how the text generates them.
+
+Analyze mechanisms for:
+
+- tension,
+- grief,
+- desire,
+- alienation,
+- intimacy,
+- fear,
+- humor,
+- absurdity,
+- shame,
+- nostalgia.
+
+Use this format:
+
+**Emotion -> Mechanism -> Textual Operations -> Restraint Level**
+
+Example:
+
+Grief
+-> behavioral externalization
+-> ordinary action + concrete object + suppressed explanation
+-> high restraint
+
+---
+
+# 10. Anti-patterns
+
+Explicitly prohibit superficial imitation.
+
+Examples:
+
+- copying signature phrases,
+- overusing famous imagery,
+- artificially inserting period vocabulary,
+- making every sentence stylistically conspicuous,
+- exaggerating one recognizable trait,
+- confusing translator style with author style,
+- sacrificing story logic for stylistic resemblance,
+- turning nuanced tendencies into rigid formulas.
+
+Add author-specific anti-patterns below.
+
+- [Anti-pattern]
+- [Anti-pattern]
+
+---
+
+# 11. Writing Protocol
+
+When using this skill, follow this order.
+
+## Step 1 - Diagnose
+
+Determine whether the task is:
+
+- new drafting,
+- rewriting,
+- editing,
+- critique,
+- scene design,
+- character work,
+- dialogue,
+- sentence work,
+- structural revision.
+
+## Step 2 - Preserve
+
+Identify what must remain unchanged:
+
+- facts,
+- plot events,
+- intent,
+- character information,
+- required terminology.
+
+## Step 3 - Structural Pass
+
+Apply:
+
+- Writing Models,
+- Narrative DNA,
+- Information Control,
+- Scene Construction.
+
+Do not begin with vocabulary substitution.
+
+## Step 4 - Sentence Pass
+
+Apply:
+
+- Syntax DNA,
+- Lexical DNA,
+- Rhythm DNA,
+- Punctuation DNA.
+
+## Step 5 - Rhetorical Pass
+
+Apply:
+
+- imagery,
+- contrast,
+- metaphor,
+- irony,
+- repetition,
+- other relevant rhetorical mechanisms.
+
+## Step 6 - Anti-Imitation Pass
+
+Remove:
+
+- copied phrasing,
+- excessive signature imagery,
+- forced period diction,
+- caricature,
+- ornamental imitation.
+
+## Step 7 - Fidelity Check
+
+Check:
+
+- Writing Models,
+- narrative distance,
+- information control,
+- sentence structure,
+- rhythm,
+- rhetoric,
+- imagery,
+- emotional restraint,
+- consistency.
+
+---
+
+# 12. Transformation Pipeline
+
+For rewriting tasks:
+
+```text
+Original Text
+-> Content Map
+-> Narrative Diagnosis
+-> Structural Rewrite
+-> Sentence Rewrite
+-> Rhythm Adjustment
+-> Rhetorical Adjustment
+-> Anti-Imitation Filter
+-> Fidelity Review
+-> Final Output
+```
+
+Never perform style transformation by simple synonym replacement.
+
+---
+
+# 13. Fidelity Checklist
+
+Score each item:
+
+- 0 = absent
+- 1 = weak
+- 2 = acceptable
+- 3 = strong
 
 ## Writing Models
 
-可复现、可教学的核心写作技巧。每个模型包含触发条件、具体操作、效果评估与失败模式。
+- Core models are actually active.
+- Models are used only when appropriate.
 
-### WM-01: [模型名称]
+## Narrative
 
-**一句话定义**：[最精准的单句描述]
+- POV is coherent.
+- Narrative distance is appropriate.
+- Information is released in characteristic ways.
+- Scene transitions are consistent.
 
-**触发条件**：什么情况下使用此模型？
-- [条件1]
-- [条件2]
+## Linguistic
 
-**操作步骤**：
-1. [第一步]
-2. [第二步]
-3. [第三步]
+- Sentence patterns are plausible.
+- Rhythm is plausible.
+- Lexical choices are consistent.
+- Punctuation serves similar functions.
 
-**效果指标**：成功的表现是什么？
-- [指标1]
-- [指标2]
+## Rhetorical
 
-**失败模式**：哪些错误会导致这个模型失效？
-- [失败1]
-- [失败2]
+- Imagery has narrative function.
+- Figurative language is not decorative imitation.
+- Emotional effects arise from mechanisms, not labels.
 
-**文本示例**：
-```
-[原文引用示例]
-```
+## Anti-Caricature
 
----
-
-### WM-02: [模型名称]
-### WM-03: [模型名称]
-
-...
+- No famous line is reproduced.
+- No signature image is mechanically overused.
+- The output is not a parody of the author.
 
 ---
 
-## Writing Heuristics
+# 14. Confidence Labels
 
-启发式规则库：快速判断与决策的规则。WHEN X → DO Y 格式。
+Every major extracted feature should use:
 
-### Sentence（句式层）
+- **HIGH** - supported by multiple primary texts.
+- **MEDIUM** - recurring but period/genre dependent.
+- **LOW** - suggestive, limited evidence.
 
-**H-S-01**: WHEN [条件] → DO [操作]
-- 原因：[为什么这样做有效]
-- 反例：[什么时候不该这样做]
-
-**H-S-02**: WHEN [条件] → DO [操作]
-
-...
-
-### Paragraph（段落层）
-
-**H-P-01**: WHEN [条件] → DO [操作]
-
-...
-
-### Scene（场景层）
-
-**H-SC-01**: WHEN [条件] → DO [操作]
-
-...
-
-### Character（人物层）
-
-**H-C-01**: WHEN [条件] → DO [操作]
-
-...
-
-### Dialogue（对话层）
-
-**H-D-01**: WHEN [条件] → DO [操作]
-
-...
-
-### Revision（修改层）
-
-**H-R-01**: WHEN [条件] → DO [操作]
-
-...
+Low-confidence observations should not become hard generation rules.
 
 ---
 
-## Linguistic DNA
+# 15. Honest Boundaries
 
-语言系统的6个维度。每个维度定义了作者在该层次的风格特征、高频手法、禁忌选项。
+State clearly:
 
-### Lexicon（词汇）
+- corpus limitations,
+- translation limitations,
+- genre limitations,
+- period limitations,
+- disputed interpretations,
+- low-confidence features.
 
-**高频词特征**：
-- [特征1]
-- [特征2]
+Do not claim:
 
-**避忌词**：
-- [禁用词汇类型]
+- access to the author's private intentions,
+- perfect reconstruction of authorial thought,
+- exact authorship simulation.
 
-**词汇示例表**：
-| 高频词 | 频率 | 功能 |
-|-------|------|------|
-| [词] | [次] | [作用] |
-
----
-
-### Syntax（句法）
-
-**句式特征**：
-- [句式特点1]
-- [句式特点2]
-
-**句长分布**：
-- [短句/长句比例]
-
-**结构偏好**：
-- [语序偏好]
-- [并列/从属比例]
+This skill is a model derived from available evidence, not the author.
 
 ---
 
-### Rhythm（节奏）
+# 16. Sources
 
-**音韵特征**：
-- [韵脚/声调特点]
-- [停顿规律]
+## Primary Sources
 
-**读感**：
-- [整体节奏感描述]
+- [Source]
 
----
+## Author Commentary
 
-### Punctuation（标点）
+- [Source]
 
-**标点偏好**：
-| 标点 | 频率 | 功能 |
-|------|------|------|
-| [标点] | [高/中/低] | [用途] |
+## Scholarly / Critical Sources
 
-**禁止标点**：
-- [避免使用的标点]
+- [Source]
 
----
+## Comparative Sources
 
-### Rhetoric（修辞）
-
-**常用修辞**：
-- [修辞1]：[特点]
-- [修辞2]：[特点]
-
-**禁止修辞**：
-- [避免的修辞方式]
-
----
-
-### Pragmatics（语用）
-
-**话语立场**：
-- [叙述者态度]
-- [读者预期]
-
-**信息传达**：
-- [显性表达 vs 隐性暗示的比例]
-- [省略原则]
-
----
-
-## Narrative DNA
-
-叙述系统的9个维度。定义了故事如何被讲述、信息如何流动、读者如何被引导。
-
-### POV（视角）
-
-**常用视角**：
-- [视角类型及特点]
-
-**视角切换规律**：
-- [何时切换、如何标记]
-
----
-
-### Distance（距离）
-
-**常用距离**：
-- 近距离：[特点]
-- 中距离：[特点]
-- 远距离：[特点]
-
-**距离调整规律**：
-- [何时拉远、何时靠近]
-
----
-
-### Information Control（信息控制）
-
-**悬念策略**：
-- [关键信息的揭示时机]
-
-**读者知情度与人物知情度**：
-- [何时同步、何时差异]
-
----
-
-### Time（时间）
-
-**时间结构**：
-- [线性/非线性]
-- [跳跃规律]
-
-**节奏控制**：
-- [慢镜头 vs 快进的使用]
-
----
-
-### Scene（场景）
-
-**场景构成**：
-- [场景的典型长度]
-- [场景内信息密度]
-
-**场景切换**：
-- [转场方式]
-- [转场频率]
-
----
-
-### Character（人物）
-
-**人物呈现方式**：
-- [直接描写 vs 侧面烘托]
-- [心理深度]
-
-**人物发展**：
-- [弧线特征]
-- [转折方式]
-
----
-
-### Dialogue（对话）
-
-**对话特征**：
-- [口语特点]
-- [信息密度]
-
-**对话功能**：
-- [推动情节 vs 展现人物的比例]
-
----
-
-### Structure（结构）
-
-**三幕式 / 五幕式 / 其他**：
-- [具体结构特征]
-
-**转折点**：
-- [如何设置转折点]
-
----
-
-### Ending（结局）
-
-**结局类型**：
-- [圆满 / 悬开 / 反讽等]
-
-**尾声处理**：
-- [如何收尾]
-
----
-
-## Imagery System
-
-意象与象征系统。定义了作者使用意象、隐喻、象征的规律，以及这些意象之间的关系。
-
-### Core Imagery（核心意象）
-
-**高频意象**：
-| 意象 | 频率 | 象征意义 | 一致性 |
-|------|------|---------|-------|
-| [意象] | [次/频率] | [含义] | [high/medium/low] |
-
----
-
-### Imagery Relationships（意象关系）
-
-**对立系统**：
-- [对立意象对及其作用]
-
-**递进系统**：
-- [意象升级或组合]
-
-**转化系统**：
-- [意象如何变换]
-
----
-
-### Spatial System（空间）
-
-**空间类型**：
-- 内部空间：[特点]
-- 外部空间：[特点]
-- 过渡空间：[特点]
-
-**空间心理学**：
-- [人物在各种空间中的行为规律]
-
----
-
-### Color Imagery（颜色）
-
-**颜色频率**：
-| 颜色 | 频率 | 情绪 | 场景 |
-|------|------|------|------|
-| [颜色] | [%] | [情绪] | [典型场景] |
-
-**禁用颜色**：
-- [避免的颜色及原因]
-
----
-
-### Body Imagery（身体）
-
-**高频身体意象**：
-| 部位 | 频率 | 代表 | 场景 |
-|------|------|------|------|
-| [部位] | [次] | [含义] | [何时出现] |
-
-**身体禁忌**：
-- [不常写的身体表现]
-
----
-
-### Natural Imagery（自然）
-
-**常用自然意象**：
-- [天气/季节/地貌等]
-
-**心理映射**：
-- [自然现象与情绪的对应关系]
-
----
-
-### Object Imagery（物件）
-
-**象征性物件**：
-| 物件 | 频率 | 象征 | 功能 |
-|------|------|------|------|
-| [物件] | [次] | [意义] | [作用] |
-
-**物件处理规律**：
-- [物件的命运与意义]
-
----
-
-### Sensory Preference（感官）
-
-**感官占比**：
-| 感官 | 占比 | 特点 |
-|------|------|------|
-| 视觉 | [%] | [特征] |
-| 触觉 | [%] | [特征] |
-| 听觉 | [%] | [特征] |
-
-**禁用感官**：
-- [避免使用的感官]
-
----
-
-### Thematic Semantic Field（主题语义场）
-
-**核心主题**：
-- 主题1：[词汇场] → [意象场] → [场景场] → [跨作品表现]
-- 主题2：[...]
-
----
-
-## Emotional Mechanics
-
-情绪生成与传达的机制。定义了作者如何激发读者的特定情绪。
-
-**情绪1**: [名称]
-- **触发条件**：[什么情节元素触发]
-- **语言工具**：[用什么语言技巧传达]
-- **强度曲线**：[如何递进]
-
-**情绪2**: [...]
-
----
-
-## Anti-patterns
-
-作者**绝对不会做**的事。定义风格边界与禁忌。
-
-### Prohibitions（7个禁止项）
-
-1. **禁止拼贴名句**：[具体说明]
-2. **禁止复制标志性句式**：[具体说明]
-3. **禁止过量重复代表性意象**：[具体说明]
-4. **禁止把作者简化成3个形容词**：[具体说明]
-5. **禁止每句话都强行风格化**：[具体说明]
-6. **禁止为了像作者而破坏情节逻辑**：[具体说明]
-7. **禁止把翻译腔误认为原作者语言**：[具体说明]
-
-### Boundaries（6个边界问题）
-
-- **时间限制**：[哪些时期材料缺失及其影响]
-- **体裁限制**：[只分析了哪些体裁，未覆盖哪些]
-- **验证范围**：[风格规律是否可以跨体裁应用]
-- **翻译影响**：[哪些特征可能受翻译影响]
-- **置信度**：[哪些特征置信度低]
-- **信息来源**：[哪些来自评论而非文本统计]
-
----
-
-## Transformation Pipeline
-
-使用此Skill进行文本转化的标准流程。
-
-### Step 1: Analysis（分析阶段）
-[分析需求、文本风格诊断的具体步骤]
-
-### Step 2: Extraction（提取阶段）
-[提取目标作家的相关特征]
-
-### Step 3: Adaptation（适应阶段）
-[将特征适配到用户文本中]
-
-### Step 4: Integration（整合阶段）
-[确保风格自然融入，不显生硬]
-
-### Step 5: Validation（验证阶段）
-[检查转化结果是否满足目标]
-
----
-
-## Editing Protocol
-
-使用此Skill进行编辑修改时的协议。
-
-**编辑原则**：
-1. [原则1]
-2. [原则2]
-3. [原则3]
-
-**修改等级**：
-- **Level 1 - 微调**：[词汇/标点调整]
-- **Level 2 - 句式改造**：[结构重组]
-- **Level 3 - 段落重写**：[深度改写]
-- **Level 4 - 场景重构**：[情节调整]
-
-**修改前/修改后对比**：
-```
-修改前：[原文]
-修改后：[改文]
-理由：[这样改的原因，对标哪个特征]
-```
-
----
-
-## Fidelity Checklist
-
-检查文本是否真正呈现了此作家的风格特征。
-
-- [ ] 词汇：是否使用了高频词，避免了禁忌词？
-- [ ] 句式：句长、节奏是否符合特征？
-- [ ] 意象：是否出现了核心意象，且比例恰当？
-- [ ] 情绪传达：是否采用了此作家的情绪激发机制？
-- [ ] 禁忌遵守：是否避免了所有禁止项？
-- [ ] 逻辑完整：是否在保持风格的前提下维持了故事逻辑？
-- [ ] 真实感：是否呈现出了此作家的"手感"，而非机械复制？
-
----
-
-## Honest Boundaries
-
-此Skill的局限与诚实说明。
-
-**无法复现的部分**：
-- [创意与想象力相关部分]
-- [个人经历造就的风格]
-- [时代背景特有的表达]
-
-**信息来源**：
-- 分析对象：[作品清单]
-- 分析时间：[日期]
-- 分析者视角：[可能的偏差]
-- 后续变化：[之后的作品未覆盖]
-
-**使用建议**：
-- ✅ 用于学习技巧、理解原理、借鉴手法
-- ❌ 不用于机械复制或模仿创意本身
-- ⚠️ 需要创作者的独立判断与创新
-
----
-
-## Sources
-
-参考文献与数据来源。
-
-### 作品清单
-
-| 作品 | 发表年 | 体裁 | 字数 | 分析深度 |
-|------|-------|------|------|---------|
-| [作品名] | [年份] | [体裁] | [字数] | [深/中/浅] |
-
-### 二手研究
-
-- [学术论文/评论/传记等]
-
-### 数据统计
-
-- 总分析字数：[字数]
-- 特征样本数：[数量]
-- 统计方法：[方法说明]
-
-### 分析者注
-
-- [任何必要的补充说明]
+- [Source]
