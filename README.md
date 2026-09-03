@@ -46,9 +46,7 @@ Writer Nuwa 基于 NUWA-Skill 的人物蒸馏方法，
 
 <br>
 
-[同事.skill](https://github.com/titanwings/colleague-skill) 证明了蒸馏一个人是可行的。<br>
-那何必蒸馏同事？去蒸馏乔布斯、芒格、费曼、马斯克。<br>
-只需输入一个名字，女娲自动完成调研、提炼、验证全流程。
+只需输入一个作家名字和分析范围，Writer Nuwa 自动完成语料建立、特征提炼、验证与 Writer Skill 构建。
 
 [看效果](#效果示例) · [安装](#安装) · [它蒸馏了什么](#女娲蒸馏了什么) · [工作原理](#工作原理)
 
@@ -469,21 +467,15 @@ nuwa-skill/
     └── x-mastery-mentor/             # X导师（主题Skill）
 ```
 
-调研过程全透明。每个example都包含完整的调研文件，你可以看到信息怎么被收集、筛选、变成心智模型。乔布斯的示例还附带了一段完整的实战对话记录（聊AI硬件、OpenAI vs Anthropic、Apple破局），展示Skill在多轮深度对话中的表现。
+调研过程全透明。每个 example 都包含完整的研究文件，你可以看到作品语料如何被收集、筛选，并转换为可执行的写作规则。
 
 ---
 
 ## 背后的故事
 
-[同事.skill](https://github.com/titanwings/colleague-skill) 最近在GitHub爆火——把离职同事蒸馏成AI Skill，几天破5000星。它证明了一件事：蒸馏一个人是完全可行的。
+Writer Nuwa 延续 NUWA-Skill 的研究与验证方法，但将分析对象从人物的公开观点转为作家的作品语料、写作时期、批评材料与创作机制。
 
-既然我们有了蒸馏人的能力，为什么只蒸馏身边的同事？去蒸馏各领域最强的人。而且幸运的是，这些人通常留下了大量可以被蒸馏的材料——著作、演讲、访谈、社交媒体。这是对自己能力的极大补充。
-
-我之前就一直在做类似的事，但蒸馏的不是同事，是芒格、费曼、Naval、马斯克、塔勒布这些人。今天把方法论开源了。
-
-女娲不复制人。它提取认知操作系统。
-
-**女娲（Nuwa）**，中国神话里用泥土造人的女神。这里的泥土是公开信息，造出来的不是人，是一面镜子。
+这里的目标不是生成一个“像作者”的声音，而是把作者如何组织文本、调度语言、控制信息和使用意象，转换为可验证、可迁移的 Writer Skill。
 
 ---
 
@@ -544,18 +536,27 @@ MIT License © [花叔 Huashu](https://github.com/alchaincyf)
 
 ## English
 
-> *"The next person you want to distill doesn't have to be a colleague."*
+> *"Learn how a writer writes, not just what they wrote."*
 
-**[colleague-skill](https://github.com/titanwings/colleague-skill)** proved that distilling a person into an AI skill is viable. **Nuwa** asks: why stop at colleagues? Distill the best minds in every field — Munger, Feynman, Musk, Naval — people who conveniently left mountains of distillable material behind.
+**Writer Nuwa** is a derivative project based on [NUWA-Skill](https://github.com/alchaincyf/nuwa-skill). It adapts cognitive distillation into writer-system distillation: extracting how an author organizes language, narrative, imagery, and revision decisions.
 
-Nuwa is an [Agent Skill](https://agentskills.io) that extracts cognitive frameworks — mental models, decision heuristics, expression DNA — from any public figure into a runnable perspective skill. Works in Claude Code, Codex, Cursor, OpenClaw, Hermes Agent, CodeBuddy, Workbuddy, Gemini CLI, OpenCode, and 50+ skills-compatible runtimes.
+Writer Nuwa is an [Agent Skill](https://agentskills.io) that turns an author's corpus into a runnable Writer `SKILL.md`. It works in Claude Code, Codex, Cursor, OpenClaw, Hermes Agent, CodeBuddy, Workbuddy, Gemini CLI, OpenCode, and 50+ skills-compatible runtimes.
 
-Not role-playing. Cognitive architecture extraction.
+It extracts:
 
-**Install** (cross-runtime, auto-detects your agent): `npx skills add alchaincyf/nuwa-skill`
+- Writing Models
+- Writing Heuristics
+- Linguistic DNA
+- Narrative DNA
+- Imagery System
+- Emotional Mechanics
+- Anti-patterns
+- Honest Boundaries
 
-**How it works**: Input a name → 6 parallel research agents → 40+ primary sources → triple-verified mental models → quality-validated SKILL.md
+**How it works**: Author + scope → corpus building → 6 parallel Writer Research Agents → writing-system distillation → Writer `SKILL.md` → fidelity validation → dual reviewer refinement.
 
-**13 person skills + 1 topic skill included** — all with full research data. The Jobs example includes a complete multi-turn conversation demo.
+The system prioritizes high-level mechanisms over direct quotation or surface imitation. For living authors, use it primarily for style analysis, writing education, and non-high-fidelity creative guidance. For translated literature, distinguish the author's original-language features from the translator's language features.
+
+**Install** (cross-runtime, auto-detects your agent): `npx skills add overwegfernandz80-hub/writer-nuwa-skill`
 
 See the Chinese README above for live examples and methodology.
