@@ -219,7 +219,7 @@ Ingresa un nombre y Nuwa hace cuatro cosas:
 
 **4. Validación de calidad** — prueba con 3 preguntas que la persona respondió públicamente; la dirección debe coincidir. Luego prueba con 1 pregunta que nunca discutió; el skill debería mostrar incertidumbre apropiada en lugar de falsa confianza.
 
-Metodología completa en `references/extraction-framework.md`.
+Metodología completa en `references/writer-extraction-framework.md`.
 
 ---
 

@@ -22,6 +22,15 @@ Keep first-hand textual evidence separate from criticism, biography, and editori
 No literary adjective enters the final skill directly. Labels such as “restrained,” “cinematic,” “cold,” or “transparent” are hypotheses only. Convert every candidate through:
 
 ```text
+作品证据
+→ Writing Models
+→ Writing Heuristics
+→ Linguistic DNA
+→ Narrative DNA
+→ Imagery System
+```
+
+```text
 Observation
 ↓
 Evidence

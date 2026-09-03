@@ -208,6 +208,17 @@ Dual Reviewer Refinement
 
 把文本观察转换为可验证、可执行的写作系统，包括 `Writing Models`、`Writing Heuristics`、`Linguistic DNA`、`Narrative DNA`、`Imagery System` 和 `Anti-patterns`。任何“很克制”“很冷峻”之类的文学形容，都必须经过 Observation → Evidence → Mechanism → Trigger → Operation → Failure Condition 的转换，不能直接入库。
 
+核心提炼链：
+
+```text
+作品证据
+→ Writing Models
+→ Writing Heuristics
+→ Linguistic DNA
+→ Narrative DNA
+→ Imagery System
+```
+
 ### Phase 3: Writer Skill Construction
 
 将提炼结果组装为 Writer `SKILL.md`，包含写作哲学、写作模型、启发式规则、语言与叙事 DNA、意象系统、情绪机制、反模仿边界、写作协议和诚实边界。
@@ -260,7 +271,7 @@ Dual Reviewer Refinement
 - `Literary Fidelity Critic`
 - `Generative Writing Engineer`
 
-完整方法论在 `references/extraction-framework.md`。
+完整方法论在 `references/writer-extraction-framework.md`。
 
 ---
 
