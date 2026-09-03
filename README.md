@@ -64,17 +64,7 @@ Writer Nuwa 基于 NUWA-Skill 的人物蒸馏方法，
 
 ---
 
-## 与 NUWA-Skill 的区别
-
-原 NUWA-Skill 主要蒸馏人物的认知架构：
-
-```text
-Mental Models
-→ Decision Heuristics
-→ Expression DNA
-```
-
-Writer Nuwa 将该方法转换为写作系统蒸馏：
+## Writer Nuwa 的方法转换
 
 ```text
 Writing Models
@@ -85,17 +75,7 @@ Writing Models
 → Writer Skill
 ```
 
-| NUWA | Writer Nuwa |
-|---|---|
-| Mental Models | Writing Models |
-| Decision Heuristics | Writing Heuristics |
-| Expression DNA | Linguistic DNA |
-| Decisions | Text Operations |
-| Life Timeline | Writing Periods |
-| External Views | Poetics & Criticism |
-| Persona Fidelity | Writer Fidelity |
-
-NUWA 关注一个人如何思考和判断；Writer Nuwa 关注一个作家如何组织文本、控制叙事、调度语言，并将这些特征转化为可以执行、验证和迁移的写作规则。
+Writer Nuwa 关注一个作家如何组织文本、控制叙事、调度语言，并将这些特征转化为可以执行、验证和迁移的写作规则。
 
 ---
 
