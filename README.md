@@ -1,6 +1,6 @@
 <div align="center">
 
-# 女娲.skill
+# Writer Nuwa · 作家写作系统蒸馏器
 
 <p align="center">
   <img src="assets/hero.gif" alt="nuwa-skill Hero Animation" />
@@ -8,7 +8,7 @@
   <sub>动画由 <a href="https://github.com/alchaincyf/huashu-design">huashu-design</a> skill 制作</sub>
 </p>
 
-> *「你想蒸馏的下一个员工，何必是同事」*
+> 输入一个作家名字，蒸馏他/她如何写，而不只是写过什么。
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Agent Skills](https://img.shields.io/badge/Agent%20Skills-Standard-green)](https://agentskills.io)
@@ -17,7 +17,30 @@
 
 <br>
 
-**女娲帮你蒸馏任何人的思维方式，让乔布斯、马斯克、芒格、费曼都给你打工。**
+**Writer Nuwa 将作家的作品、写作谈与批评材料，转化为可分析、可验证、可执行的写作系统。**
+
+Writer Nuwa 基于 NUWA-Skill 的人物蒸馏方法，
+将原来的认知蒸馏流程改造成写作系统蒸馏流程。
+
+**输入：**
+
+作者名字
+
+**输出：**
+
+- Writing Models
+- Writing Heuristics
+- Linguistic DNA
+- Narrative DNA
+- Imagery System
+- Emotional Mechanics
+- Anti-patterns
+- Honest Boundaries
+- 可运行的 Writer `SKILL.md`
+
+**核心理念：**
+
+**HOW THEY WRITE, not WHAT THEY WROTE.**
 
 <sub>基于开放的 [Agent Skills 协议](https://agentskills.io)，可在 Claude Code、Codex、Cursor、OpenClaw、Hermes Agent、CodeBuddy、Workbuddy、Gemini CLI、OpenCode 等 50+ 兼容 runtime 中运行。</sub>
 
@@ -40,6 +63,41 @@
 [![Star History Chart](https://api.star-history.com/svg?repos=alchaincyf/nuwa-skill&type=Date)](https://star-history.com/#alchaincyf/nuwa-skill&Date)
 
 </div>
+
+---
+
+## 与 NUWA-Skill 的区别
+
+原 NUWA-Skill 主要蒸馏人物的认知架构：
+
+```text
+Mental Models
+→ Decision Heuristics
+→ Expression DNA
+```
+
+Writer Nuwa 将该方法转换为写作系统蒸馏：
+
+```text
+Writing Models
+→ Writing Heuristics
+→ Linguistic DNA
+→ Narrative DNA
+→ Imagery & Rhetorical System
+→ Writer Skill
+```
+
+| NUWA | Writer Nuwa |
+|---|---|
+| Mental Models | Writing Models |
+| Decision Heuristics | Writing Heuristics |
+| Expression DNA | Linguistic DNA |
+| Decisions | Text Operations |
+| Life Timeline | Writing Periods |
+| External Views | Poetics & Criticism |
+| Persona Fidelity | Writer Fidelity |
+
+NUWA 关注一个人如何思考和判断；Writer Nuwa 关注一个作家如何组织文本、控制叙事、调度语言，并将这些特征转化为可以执行、验证和迁移的写作规则。
 
 ---
 
@@ -143,23 +201,65 @@ git clone https://github.com/alchaincyf/nuwa-skill <上面对应的路径>
 
 ---
 
-### 使用
+## Usage
 
-装好后，告诉 agent：
+安装后直接告诉你的 Agent：
 
-```
-> 蒸馏一个保罗·格雷厄姆
-> 造一个张小龙的视角Skill
-> 帮我做一个段永平的Skill
+```text
+蒸馏鲁迅的写作系统
+
+生成一个 Hemingway Writer Skill
+
+分析张爱玲的小说写作机制
+
+创建一个契诃夫短篇小说 Writer Skill
 ```
 
-造完之后直接调用：
+## Output
 
+每次蒸馏通常生成：
+
+```text
+writer-author/
+├── SKILL.md
+├── FIDELITY.md
+└── references/
+  └── research/
+    ├── 01-corpus.md
+    ├── 02-linguistic-dna.md
+    ├── 03-narrative-dna.md
+    ├── 04-rhetoric-imagery.md
+    ├── 05-poetics-criticism.md
+    └── 06-period-contrast.md
 ```
-> 用芒格的视角帮我分析这个投资决策
-> 费曼会怎么解释量子计算？
-> 切换到Naval，我在纠结三件事
-```
+
+  ## Important Boundaries
+
+  Writer Nuwa 的目标不是复制具体作品，
+  也不是拼贴作者的标志性句子。
+
+  系统优先提炼：
+
+  - 高层写作机制
+  - 叙事结构
+  - 语言倾向
+  - 修辞机制
+  - 编辑原则
+
+  对于在世作者，应优先用于：
+
+  - 风格分析
+  - 写作教育
+  - 高层特征研究
+  - 非高度仿真的创作指导
+
+  对于翻译文学，必须区分：
+
+  作者原始语言特征
+
+  与
+
+  译者语言特征。
 
 ---
 
@@ -257,17 +357,89 @@ npx skills add alchaincyf/darwin-skill
 
 ---
 
-## 工作原理
+## How It Works
 
-输入一个名字后，女娲做四件事：
+Writer Nuwa 将作家的写作特征从语料中提取出来，经过规则化、构建和验证，最终生成可运行的 Writer Skill：
 
-**1. 六路并行采集**——著作、播客/访谈、社交媒体、批评者视角、决策记录、人生时间线，6个Agent同时跑，各自存档。
+```text
+Author + Scope
+  ↓
+Corpus Building
+  ↓
+6 Parallel Writer Research Agents
+  ↓
+Writing Models
+Writing Heuristics
+Linguistic DNA
+Narrative DNA
+Imagery System
+  ↓
+Writer SKILL.md
+  ↓
+Fidelity Validation
+  ↓
+Dual Reviewer Refinement
+```
 
-**2. 三重验证提炼**——一个观点要被收录为心智模型，必须：跨2+个领域出现过（不是随口一说）、能推断对新问题的立场（有预测力）、不是所有聪明人都会这么想（有排他性）。三个都过才收录。
+### Phase 1: Corpus and Writer Research
 
-**3. 构建Skill**——3-7个心智模型 + 5-10条决策启发式 + 表达DNA + 价值观与反模式 + 诚实边界，写入SKILL.md。
+确认作者与分析范围，建立作品语料库，并由 6 个并行 Writer Research Agent 分析作品、写作时期、语言、叙事、意象和文学批评材料。
 
-**4. 质量验证**——拿3个此人公开回答过的问题测试，方向一致才通过。再用1个他没讨论过的问题测试，Skill应该表现出适度不确定而非斩钉截铁。
+### Phase 2: Writing Feature Extraction
+
+把文本观察转换为可验证、可执行的写作系统，包括 `Writing Models`、`Writing Heuristics`、`Linguistic DNA`、`Narrative DNA`、`Imagery System` 和 `Anti-patterns`。任何“很克制”“很冷峻”之类的文学形容，都必须经过 Observation → Evidence → Mechanism → Trigger → Operation → Failure Condition 的转换，不能直接入库。
+
+### Phase 3: Writer Skill Construction
+
+将提炼结果组装为 Writer `SKILL.md`，包含写作哲学、写作模型、启发式规则、语言与叙事 DNA、意象系统、情绪机制、反模仿边界、写作协议和诚实边界。
+
+### Phase 4: Fidelity Validation
+
+通过已知段落重构、未知题材、风格消融、反漫画化、对照、模仿、识别和应用测试，检查 Skill 学到的是写作机制，而不是原作的表面词汇或固定意象。
+
+### Phase 5: Dual Reviewer Refinement
+
+由两个独立 Reviewer 复核：`Literary Fidelity Critic` 判断“这是真的吗”，`Generative Writing Engineer` 判断“这能运行吗”。只有证据真实且规则可执行，才进入最终交付。
+
+### 五阶段概览
+
+#### Phase 1 — Research
+
+六个 Agent：
+
+1. `Corpus Analyst`
+2. `Linguistic Analyst`
+3. `Narratology Analyst`
+4. `Rhetoric & Imagery Analyst`
+5. `Poetics & Criticism Analyst`
+6. `Period & Contrast Analyst`
+
+#### Phase 2 — Distillation
+
+生成：
+
+- 3–7 个 `Writing Models`
+- `Writing Heuristics`
+- `Linguistic DNA`
+- `Narrative DNA`
+- `Imagery System`
+- `Anti-patterns`
+- `Boundaries`
+
+#### Phase 3 — Skill Assembly
+
+生成最终 Writer `SKILL.md`。
+
+#### Phase 4 — Fidelity Validation
+
+使用 `reconstruction`、`unseen topic`、`ablation`、`anti-caricature`、`contrast` 测试。
+
+#### Phase 5 — Refinement
+
+两个独立 Reviewer：
+
+- `Literary Fidelity Critic`
+- `Generative Writing Engineer`
 
 完整方法论在 `references/extraction-framework.md`。
 
@@ -329,6 +501,17 @@ nuwa-skill/
 | 💬 公众号 | 微信搜「花叔」或扫码关注 ↓ |
 
 <img src="wechat-qrcode.jpg" alt="公众号二维码" width="360">
+
+## Credits
+
+Writer Nuwa is a derivative project based on
+[NUWA-Skill](https://github.com/alchaincyf/nuwa-skill).
+
+Original NUWA methodology:
+Huashu / alchaincyf.
+
+This fork adapts cognitive distillation into
+writer-system distillation.
 
 ## 许可证
 
